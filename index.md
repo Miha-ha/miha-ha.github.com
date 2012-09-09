@@ -1,46 +1,41 @@
----
-layout: page
-title: Hello World!
-tagline: Supporting tagline
----
-{% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
-
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
-
-## Update Author Attributes
-
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Miha-ha - undercontruction :)</title>
+    <meta charset="UTF-8">
+    <style>
+        BODY {
+            background:#444;
+            }
+        div {
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin:-256px 0 0 -256px;
+            width:527px;
+            height:414px;
+            }
+            div img {
+                overflow:hidden;
+                display:block;
+                width:100%;
+                height:100%;
+                border-radius:45px;             
+                box-shadow:0 0 100px 10px rgba(128, 128, 128, 0.4);
+                text-indent:-9999px;
+                -webkit-transition:box-shadow 0.2s linear;
+                -moz-transition:box-shadow 0.2s linear;
+                -ms-transition:box-shadow 0.2s linear;
+                -o-transition:box-shadow 0.2s linear;
+                transition:box-shadow 0.2s linear;
+                }
+            div img:hover {
+                box-shadow:0 0 100px 10px rgba(35, 129, 188, 0.4);
+                }
+    </style>
+</head>
+<body>
+    <div><img src="undercontr.jpg" alt="Underconstruction" width="527" height="414"></div>
+</body>
+</html>
